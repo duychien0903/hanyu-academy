@@ -1,0 +1,1395 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HANYU ACADEMY — Khóa Học Tiếng Trung Trực Tuyến Cao Cấp Cho Người Việt</title>
+  <meta name="description" content="HANYU ACADEMY — Mở lối ngôn ngữ. Kết nối tương lai. Khóa học tiếng Trung online hiện đại cho người mới bắt đầu, giao tiếp thực tế, luyện thi HSK và định hướng làm việc tại Đài Loan.">
+  <meta name="keywords" content="học tiếng Trung online, tiếng Trung cho người mới bắt đầu, luyện thi HSK, tiếng Trung giao tiếp, tiếng Trung Đài Loan, Hanyu Academy">
+  <meta name="author" content="HANYU ACADEMY">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="HANYU ACADEMY — Mở lối ngôn ngữ. Kết nối tương lai.">
+  <meta property="og:description" content="Học tiếng Trung đúng phương pháp, tiến bộ có định hướng cùng HANYU ACADEMY. Lộ trình bài bản dành riêng cho người Việt.">
+  <meta property="og:image" content="assets/images/hero-visual.svg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+
+  <!-- Google Fonts: Be Vietnam Pro + Noto Sans SC -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Noto+Sans+SC:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- =========================================================================
+       SECTION 1: HEADER & NAVIGATION
+       Sticky navigation with backdrop blur, accessible hamburger menu, and CTA
+       ========================================================================= -->
+  <header class="site-header" id="siteHeader">
+    <div class="header-container container">
+      <!-- Brand Logo -->
+      <a href="#hero" class="brand-logo" aria-label="HANYU ACADEMY Trang chủ">
+        <div class="logo-seal">
+          <img src="assets/icons/seal.svg" alt="HANYU Seal" width="38" height="38" class="seal-icon">
+        </div>
+        <div class="logo-text-group">
+          <span class="brand-name">HANYU <span class="brand-name-sub">ACADEMY</span></span>
+          <span class="brand-slogan">Mở lối ngôn ngữ. Kết nối tương lai.</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="main-nav" aria-label="Điều hướng chính">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#hero" class="nav-link active">Trang chủ</a></li>
+          <li class="nav-item"><a href="#benefits" class="nav-link">Lợi ích</a></li>
+          <li class="nav-item"><a href="#courses" class="nav-link">Khóa học</a></li>
+          <li class="nav-item"><a href="#roadmap" class="nav-link">Lộ trình</a></li>
+          <li class="nav-item"><a href="#why-us" class="nav-link">Tại sao chọn Hanyu</a></li>
+          <li class="nav-item"><a href="#instructors" class="nav-link">Giảng viên</a></li>
+          <li class="nav-item"><a href="#pricing" class="nav-link">Học phí</a></li>
+          <li class="nav-item"><a href="#faq" class="nav-link">FAQ</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header Actions -->
+      <div class="header-actions">
+        <button type="button" class="btn btn-primary btn-header open-modal-btn" data-course="Tất cả khóa học">
+          <span>Tư vấn miễn phí</span>
+          <svg class="btn-arrow" viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M3 8h10M9 4l4 4-4 4" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button type="button" class="mobile-toggle" id="mobileToggle" aria-label="Mở menu điều hướng" aria-expanded="false" aria-controls="mobileNav">
+          <span class="hamburger-box">
+            <span class="hamburger-line line-1"></span>
+            <span class="hamburger-line line-2"></span>
+            <span class="hamburger-line line-3"></span>
+          </span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Menu -->
+    <div class="mobile-nav-drawer" id="mobileNav" aria-hidden="true">
+      <div class="mobile-nav-inner">
+        <div class="mobile-nav-header">
+          <div class="logo-seal small">
+            <img src="assets/icons/seal.svg" alt="HANYU" width="30" height="30">
+          </div>
+          <span class="mobile-brand-title">HANYU ACADEMY</span>
+          <button type="button" class="mobile-close-btn" id="mobileCloseBtn" aria-label="Đóng menu">
+            &times;
+          </button>
+        </div>
+        <ul class="mobile-nav-list">
+          <li><a href="#hero" class="mobile-nav-link">Trang chủ</a></li>
+          <li><a href="#benefits" class="mobile-nav-link">Lợi ích học tập</a></li>
+          <li><a href="#courses" class="mobile-nav-link">Danh sách khóa học</a></li>
+          <li><a href="#roadmap" class="mobile-nav-link">Lộ trình học</a></li>
+          <li><a href="#why-us" class="mobile-nav-link">Phương pháp đào tạo</a></li>
+          <li><a href="#instructors" class="mobile-nav-link">Đội ngũ giảng viên</a></li>
+          <li><a href="#reviews" class="mobile-nav-link">Cảm nhận học viên</a></li>
+          <li><a href="#pricing" class="mobile-nav-link">Bảng học phí</a></li>
+          <li><a href="#faq" class="mobile-nav-link">Câu hỏi thường gặp</a></li>
+        </ul>
+        <div class="mobile-nav-cta">
+          <button type="button" class="btn btn-primary btn-block open-modal-btn" data-course="Tư vấn tổng quát">
+            Tư vấn miễn phí ngay
+          </button>
+          <p class="mobile-nav-note">Đồng hành cùng học viên Việt Nam chinh phục tiếng Trung.</p>
+        </div>
+      </div>
+    </div>
+    <div class="drawer-backdrop" id="drawerBackdrop"></div>
+  </header>
+
+
+  <main id="mainContent">
+
+    <!-- =========================================================================
+         SECTION 2: HERO SECTION
+         High-converting 2-column layout, clear value proposition & editorial artboard
+         ========================================================================= -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-container">
+        <!-- Hero Text Column (Left) -->
+        <div class="hero-content reveal-on-scroll">
+          <div class="hero-badge">
+            <span class="badge-dot"></span>
+            <span class="badge-text">LỘ TRÌNH HỌC TIẾNG TRUNG DÀNH CHO NGƯỜI VIỆT</span>
+          </div>
+
+          <h1 class="hero-title">
+            Tiếng Trung mở ra những <span class="highlight-text">cơ hội lớn hơn.</span>
+          </h1>
+
+          <p class="hero-description">
+            Bắt đầu từ những kiến thức nền tảng, từng bước làm chủ phát âm, từ vựng và giao tiếp với lộ trình học rõ ràng, phù hợp với mục tiêu của bạn.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#courses" class="btn btn-primary btn-lg">
+              <span>Khám phá khóa học</span>
+              <svg viewBox="0 0 16 16" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M3 8h10M9 4l4 4-4 4" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <button type="button" class="btn btn-secondary btn-lg open-modal-btn" data-course="Tư vấn chung">
+              <span>Nhận tư vấn miễn phí</span>
+            </button>
+          </div>
+
+          <div class="hero-support-points">
+            <div class="support-item">
+              <span class="support-icon">✓</span>
+              <span>Dành cho người mới bắt đầu</span>
+            </div>
+            <span class="support-divider">•</span>
+            <div class="support-item">
+              <span class="support-icon">✓</span>
+              <span>Học tập linh hoạt</span>
+            </div>
+            <span class="support-divider">•</span>
+            <div class="support-item">
+              <span class="support-icon">✓</span>
+              <span>Lộ trình rõ ràng</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Visual Column (Right) -->
+        <div class="hero-visual-wrapper reveal-on-scroll">
+          <div class="hero-visual-card">
+            <img src="assets/images/hero-visual.svg" alt="Không gian học tiếng Trung hiện đại tại HANYU ACADEMY" class="hero-visual-img" width="720" height="580" loading="eager">
+          </div>
+        </div>
+      </div>
+
+      <!-- Subtle background decoration watermark -->
+      <div class="hero-watermark" aria-hidden="true">汉语</div>
+    </section>
+
+
+    <!-- =========================================================================
+         SECTION 3: TRUST & BENEFITS
+         Focus on real educational value without fabricated metrics or hype
+         ========================================================================= -->
+    <section class="benefits-section section-padding" id="benefits">
+      <div class="container">
+        <div class="section-header text-center reveal-on-scroll">
+          <span class="section-tag">GIÁ TRỊ CỐT LÕI</span>
+          <h2 class="section-title">Học đúng phương pháp. Tiến bộ có định hướng.</h2>
+          <p class="section-subtitle">
+            Phương pháp giảng dạy được tinh chỉnh dựa trên thói quen tư duy và điểm mạnh ngữ âm của người Việt, giúp bạn tiếp thu tự nhiên mà không cảm thấy quá tải.
+          </p>
+        </div>
+
+        <div class="benefits-grid">
+          <!-- Benefit 1 -->
+          <div class="benefit-card reveal-on-scroll">
+            <div class="benefit-icon-wrapper">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 6h16M4 12h10M4 18h16" stroke-linecap="round"/>
+                <circle cx="18" cy="12" r="3" fill="#9F2638" stroke="none"/>
+              </svg>
+            </div>
+            <h3 class="benefit-title">Lộ trình học rõ ràng</h3>
+            <p class="benefit-desc">
+              Từng tuần học được thiết kế với chuẩn đầu ra đo lường được, giúp bạn luôn biết rõ mình đang ở đâu và sẽ đạt được kỹ năng gì sau mỗi giai đoạn.
+            </p>
+          </div>
+
+          <!-- Benefit 2 -->
+          <div class="benefit-card reveal-on-scroll">
+            <div class="benefit-icon-wrapper">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                <path d="M8 9h8M8 13h5" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3 class="benefit-title">Tập trung vào khả năng ứng dụng</h3>
+            <p class="benefit-desc">
+              Không dạy lý thuyết suông. Hơn 70% thời lượng dành cho việc rèn luyện phản xạ nghe nói và xử lý tình huống giao tiếp thực tế trong đời sống và công việc.
+            </p>
+          </div>
+
+          <!-- Benefit 3 -->
+          <div class="benefit-card reveal-on-scroll">
+            <div class="benefit-icon-wrapper">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8z"/>
+                <path d="M12 6v6l4 2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3 class="benefit-title">Nội dung phù hợp người Việt</h3>
+            <p class="benefit-desc">
+              Tận dụng tối đa lợi thế từ mối quan hệ từ Hán - Việt quen thuộc, đồng thời chỉnh sửa triệt để các lỗi sai kinh điển về thanh 1, thanh 4 và các âm bật hơi.
+            </p>
+          </div>
+
+          <!-- Benefit 4 -->
+          <div class="benefit-card reveal-on-scroll">
+            <div class="benefit-icon-wrapper">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"/>
+                <path d="M12 8v8M8 12h8" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3 class="benefit-title">Hỗ trợ lựa chọn theo mục tiêu</h3>
+            <p class="benefit-desc">
+              Được kiểm tra đầu vào và tư vấn lộ trình cá nhân hóa dựa trên mục đích học tập: thi HSK, nâng cao thu nhập, đi làm tại Đài Loan hay sở thích riêng.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- =========================================================================
+         SECTION 4: COURSE CATALOG
+         4 Rich Course Cards, configurable pricing, details modal & auto-selecting form
+         ========================================================================= -->
+    <section class="courses-section section-padding" id="courses">
+      <div class="container">
+        <div class="section-header text-center reveal-on-scroll">
+          <span class="section-tag">DANH MỤC ĐÀO TẠO</span>
+          <h2 class="section-title">Chọn khóa học phù hợp với bạn.</h2>
+          <p class="section-subtitle">
+            Mỗi mục tiêu cần một lộ trình khác nhau. Hãy chọn chương trình phù hợp với điểm xuất phát của bạn.
+          </p>
+        </div>
+
+        <!-- Course Category Filter Tabs -->
+        <div class="course-filter-bar reveal-on-scroll">
+          <button type="button" class="filter-tab active" data-filter="all">Tất cả chương trình</button>
+          <button type="button" class="filter-tab" data-filter="beginner">Cho người mới</button>
+          <button type="button" class="filter-tab" data-filter="communication">Giao tiếp thực tế</button>
+          <button type="button" class="filter-tab" data-filter="hsk">Luyện thi HSK</button>
+          <button type="button" class="filter-tab" data-filter="taiwan">Đi Đài Loan</button>
+        </div>
+
+        <!-- Course Cards Grid -->
+        <div class="courses-grid">
+          
+          <!-- KHÓA HỌC 01 -->
+          <article class="course-card reveal-on-scroll" data-category="beginner" data-course-id="c01">
+            <div class="course-card-visual">
+              <img src="assets/images/course-beginner.svg" alt="Khóa học tiếng Trung cho người mới bắt đầu" width="400" height="240" loading="lazy">
+              <span class="course-level-badge">Cấp độ: Nhập môn</span>
+            </div>
+            <div class="course-card-body">
+              <div class="course-code-tag">KHÓA HỌC 01</div>
+              <h3 class="course-card-title">Tiếng Trung cho người mới bắt đầu</h3>
+              <p class="course-card-desc">
+                Xây dựng nền tảng ngữ âm vững chắc, làm quen với hệ thống Pinyin chuẩn Bắc Kinh và cách nhận biết các bộ thủ chữ Hán thông dụng.
+              </p>
+
+              <div class="course-highlights-box">
+                <span class="highlights-label">Lợi ích nổi bật:</span>
+                <ul class="highlights-list">
+                  <li>Làm quen với Pinyin và 4 thanh điệu chuẩn xác</li>
+                  <li>Xây dựng vốn từ vựng cơ bản vững chắc (300+ từ)</li>
+                  <li>Hình thành nền tảng ngữ pháp câu hoàn chỉnh</li>
+                </ul>
+              </div>
+
+              <div class="course-meta-row">
+                <div class="meta-item">
+                  <span class="meta-label">Thời lượng tham khảo:</span>
+                  <span class="meta-value duration-val">24 buổi (3 tháng)</span>
+                </div>
+                <div class="meta-item">
+                  <span class="meta-label">Học phí tham khảo:</span>
+                  <span class="meta-value price-val">2.450.000 đ</span>
+                </div>
+              </div>
+
+              <div class="course-card-actions">
+                <button type="button" class="btn btn-outline btn-sm view-course-detail-btn" data-course-index="0">
+                  Xem khóa học
+                </button>
+                <button type="button" class="btn btn-primary btn-sm register-course-btn" data-course="Tiếng Trung cho người mới bắt đầu">
+                  Đăng ký tư vấn
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- KHÓA HỌC 02 -->
+          <article class="course-card reveal-on-scroll" data-category="communication" data-course-id="c02">
+            <div class="course-card-visual">
+              <img src="assets/images/course-communication.svg" alt="Khóa học tiếng Trung giao tiếp thực tế" width="400" height="240" loading="lazy">
+              <span class="course-level-badge">Cấp độ: Thực hành giao tiếp</span>
+            </div>
+            <div class="course-card-body">
+              <div class="course-code-tag">KHÓA HỌC 02</div>
+              <h3 class="course-card-title">Tiếng Trung giao tiếp thực tế</h3>
+              <p class="course-card-desc">
+                Phát triển phản xạ nghe - nói tự nhiên, vượt qua rào cản sợ nói sai để tự tin trò chuyện trong đời sống, công sở và mua sắm hằng ngày.
+              </p>
+
+              <div class="course-highlights-box">
+                <span class="highlights-label">Lợi ích nổi bật:</span>
+                <ul class="highlights-list">
+                  <li>Luyện nghe và phản xạ hội thoại không cần dịch nhẩm</li>
+                  <li>Giao tiếp tự nhiên trong đời sống và công sở hằng ngày</li>
+                  <li>Thực hành 35+ tình huống hội thoại thực tế sinh động</li>
+                </ul>
+              </div>
+
+              <div class="course-meta-row">
+                <div class="meta-item">
+                  <span class="meta-label">Thời lượng tham khảo:</span>
+                  <span class="meta-value duration-val">30 buổi (3.5 tháng)</span>
+                </div>
+                <div class="meta-item">
+                  <span class="meta-label">Học phí tham khảo:</span>
+                  <span class="meta-value price-val">2.950.000 đ</span>
+                </div>
+              </div>
+
+              <div class="course-card-actions">
+                <button type="button" class="btn btn-outline btn-sm view-course-detail-btn" data-course-index="1">
+                  Xem khóa học
+                </button>
+                <button type="button" class="btn btn-primary btn-sm register-course-btn" data-course="Tiếng Trung giao tiếp thực tế">
+                  Đăng ký tư vấn
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- KHÓA HỌC 03 -->
+          <article class="course-card reveal-on-scroll" data-category="hsk" data-course-id="c03">
+            <div class="course-card-visual">
+              <img src="assets/images/course-hsk.svg" alt="Khóa luyện thi HSK" width="400" height="240" loading="lazy">
+              <span class="course-level-badge">Cấp độ: HSK 1 - HSK 4</span>
+            </div>
+            <div class="course-card-body">
+              <div class="course-code-tag">KHÓA HỌC 03</div>
+              <h3 class="course-card-title">Luyện thi HSK</h3>
+              <p class="course-card-desc">
+                Hệ thống hóa toàn bộ từ vựng, ngữ pháp trọng tâm theo chuẩn khảo thí quốc tế HSK mới, rèn luyện kỹ năng phân bổ thời gian và giải đề.
+              </p>
+
+              <div class="course-highlights-box">
+                <span class="highlights-label">Lợi ích nổi bật:</span>
+                <ul class="highlights-list">
+                  <li>Ôn tập có hệ thống từ vựng và ngữ pháp theo cấp độ thi</li>
+                  <li>Luyện kỹ năng làm bài, mẹo nghe hiểu và đọc hiểu nhanh</li>
+                  <li>Thực hành đề thi thử có giáo viên chấm và phân tích lỗi</li>
+                </ul>
+              </div>
+
+              <div class="course-meta-row">
+                <div class="meta-item">
+                  <span class="meta-label">Thời lượng tham khảo:</span>
+                  <span class="meta-value duration-val">36 buổi (4 tháng)</span>
+                </div>
+                <div class="meta-item">
+                  <span class="meta-label">Học phí tham khảo:</span>
+                  <span class="meta-value price-val">3.650.000 đ</span>
+                </div>
+              </div>
+
+              <div class="course-card-actions">
+                <button type="button" class="btn btn-outline btn-sm view-course-detail-btn" data-course-index="2">
+                  Xem khóa học
+                </button>
+                <button type="button" class="btn btn-primary btn-sm register-course-btn" data-course="Luyện thi HSK">
+                  Đăng ký tư vấn
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- KHÓA HỌC 04 -->
+          <article class="course-card reveal-on-scroll" data-category="taiwan" data-course-id="c04">
+            <div class="course-card-visual">
+              <img src="assets/images/course-taiwan.svg" alt="Khóa học tiếng Trung ứng dụng tại Đài Loan" width="400" height="240" loading="lazy">
+              <span class="course-level-badge">Cấp độ: Định hướng Đài Loan</span>
+            </div>
+            <div class="course-card-body">
+              <div class="course-code-tag">KHÓA HỌC 04</div>
+              <h3 class="course-card-title">Tiếng Trung ứng dụng tại Đài Loan</h3>
+              <p class="course-card-desc">
+                Chương trình đặc thù cho người chuẩn bị làm việc, sinh sống hoặc học tập tại Đài Loan, tích hợp làm quen chữ Hán Phồn thể và từ ngữ bản địa.
+              </p>
+
+              <div class="course-highlights-box">
+                <span class="highlights-label">Lợi ích nổi bật:</span>
+                <ul class="highlights-list">
+                  <li>Các mẫu câu thông dụng trong đời sống và giao dịch công vụ</li>
+                  <li>Giao tiếp tại nhà xưởng, công sở và nơi làm việc Đài Loan</li>
+                  <li>Từ vựng thực tế và song song chữ Hán Phồn thể (繁體字)</li>
+                </ul>
+              </div>
+
+              <div class="course-meta-row">
+                <div class="meta-item">
+                  <span class="meta-label">Thời lượng tham khảo:</span>
+                  <span class="meta-value duration-val">28 buổi (3 tháng)</span>
+                </div>
+                <div class="meta-item">
+                  <span class="meta-label">Học phí tham khảo:</span>
+                  <span class="meta-value price-val">3.200.000 đ</span>
+                </div>
+              </div>
+
+              <div class="course-card-actions">
+                <button type="button" class="btn btn-outline btn-sm view-course-detail-btn" data-course-index="3">
+                  Xem khóa học
+                </button>
+                <button type="button" class="btn btn-primary btn-sm register-course-btn" data-course="Tiếng Trung ứng dụng tại Đài Loan">
+                  Đăng ký tư vấn
+                </button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Note regarding sample configuration data -->
+        <p class="catalog-disclaimer text-center">
+          * Lưu ý: Giá học và thời lượng hiển thị trên đây là số liệu cấu hình tham khảo mẫu cho bản demo. Học phí chính thức có thể thay đổi tùy thuộc vào hình thức học lớp nhỏ hoặc học kèm 1:1.
+        </p>
+      </div>
+    </section>
+
+
+    <!-- =========================================================================
+         SECTION 5: LEARNING ROADMAP
+         4-Phase progressive timeline with clear milestones
+         ========================================================================= -->
+    <section class="roadmap-section section-padding bg-cream" id="roadmap">
+      <div class="container">
+        <div class="section-header text-center reveal-on-scroll">
+          <span class="section-tag">LỘ TRÌNH 4 BƯỚC</span>
+          <h2 class="section-title">Từ con số 0 đến tự tin sử dụng tiếng Trung.</h2>
+          <p class="section-subtitle">
+            Học ngoại ngữ là một hành trình tích lũy khoa học. Chúng tôi chia nhỏ mục tiêu giúp bạn nhìn thấy rõ sự tiến bộ của mình mỗi ngày mà không bị nản lòng.
+          </p>
+        </div>
+
+        <div class="roadmap-timeline">
+          
+          <!-- Phase 1 -->
+          <div class="timeline-step reveal-on-scroll">
+            <div class="step-marker">
+              <span class="step-num">01</span>
+              <span class="step-hanzi">起</span>
+            </div>
+            <div class="step-content">
+              <span class="step-phase-badge">GIAI ĐOẠN 01</span>
+              <h3 class="step-title">Xây dựng nền tảng</h3>
+              <p class="step-desc">
+                Làm quen với Pinyin, thanh điệu, phát âm và các câu giao tiếp cơ bản. Chỉnh sửa khẩu hình chuẩn ngay từ những buổi đầu để không bị cứng giọng hay ngọng thanh điệu.
+              </p>
+              <div class="step-milestone">
+                <strong>Kết quả đạt được:</strong> Tự tin đọc chuẩn mọi từ tiếng Trung khi nhìn Pinyin; nói được các câu chào hỏi, giới thiệu bản thân cơ bản.
+              </div>
+            </div>
+          </div>
+
+          <!-- Phase 2 -->
+          <div class="timeline-step reveal-on-scroll">
+            <div class="step-marker">
+              <span class="step-num">02</span>
+              <span class="step-hanzi">承</span>
+            </div>
+            <div class="step-content">
+              <span class="step-phase-badge">GIAI ĐOẠN 02</span>
+              <h3 class="step-title">Tích lũy kiến thức</h3>
+              <p class="step-desc">
+                Mở rộng từ vựng, học ngữ pháp và hình thành câu hoàn chỉnh. Hiểu bản chất các bộ thủ chữ Hán thông dụng để ghi nhớ mặt chữ một cách logic và bền vững.
+              </p>
+              <div class="step-milestone">
+                <strong>Kết quả đạt được:</strong> Nắm vững 300 - 600 từ vựng cốt lõi; biết cách diễn đạt thời gian, địa điểm, mong muốn và sở thích.
+              </div>
+            </div>
+          </div>
+
+          <!-- Phase 3 -->
+          <div class="timeline-step reveal-on-scroll">
+            <div class="step-marker">
+              <span class="step-num">03</span>
+              <span class="step-hanzi">转</span>
+            </div>
+            <div class="step-content">
+              <span class="step-phase-badge">GIAI ĐOẠN 03</span>
+              <h3 class="step-title">Luyện tập ứng dụng</h3>
+              <p class="step-desc">
+                Thực hành nghe, nói, đọc và viết qua các tình huống quen thuộc. Rèn luyện phản xạ đối thoại nhanh thông qua bài tập đóng vai tình huống thực tế.
+              </p>
+              <div class="step-milestone">
+                <strong>Kết quả đạt được:</strong> Phản xạ tức thì trong các ngữ cảnh: mua sắm, đặt phòng, gọi món, đi lại và hỏi đường mà không cần dịch nhẩm sang tiếng Việt.
+              </div>
+            </div>
+          </div>
+
+          <!-- Phase 4 -->
+          <div class="timeline-step reveal-on-scroll">
+            <div class="step-marker">
+              <span class="step-num">04</span>
+              <span class="step-hanzi">合</span>
+            </div>
+            <div class="step-content">
+              <span class="step-phase-badge">GIAI ĐOẠN 04</span>
+              <h3 class="step-title">Hướng đến mục tiêu</h3>
+              <p class="step-desc">
+                Tập trung giao tiếp nâng cao, phục vụ học tập, công việc hoặc luyện thi chứng chỉ theo nhu cầu riêng biệt của từng học viên.
+              </p>
+              <div class="step-milestone">
+                <strong>Kết quả đạt được:</strong> Đạt chứng chỉ mục tiêu (HSK) hoặc sử dụng thành thạo tiếng Trung trong công việc, trao đổi email và phỏng vấn.
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="roadmap-bottom-note text-center">
+          <p>
+            * Cam kết tiến độ: Học viên được theo dõi và đánh giá định kỳ sau mỗi học phần. Chúng tôi không đưa ra các lời hứa viển vông về việc "thành thạo tiếng Trung sau 1 tháng" mà đồng hành để bạn tiến bộ vững chắc.
+          </p>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- =========================================================================
+         SECTION 6: WHY HANYU ACADEMY
+         Editorial comparison & distinct educational advantages
+         ========================================================================= -->
+    <section class="why-us-section section-padding" id="why-us">
+      <div class="container">
+        <div class="section-header text-center reveal-on-scroll">
+          <span class="section-tag">TRIẾT LÝ GIẢNG DẠY</span>
+          <h2 class="section-title">Không chỉ học từ vựng. Học cách sử dụng ngôn ngữ.</h2>
+          <p class="section-subtitle">
+            Học ngoại ngữ hiệu quả là khi bạn biến kiến thức trên sách vở thành phản xạ tự nhiên của chính mình.
+          </p>
+        </div>
+
+        <div class="why-us-grid">
+          
+          <!-- Item 1 -->
+          <div class="why-card reveal-on-scroll">
+            <div class="why-card-number">01</div>
+            <div class="why-card-content">
+              <h3 class="why-card-title">Giải thích dễ hiểu bằng tiếng Việt</h3>
+              <p class="why-card-desc">
+                Giảng viên so sánh trực quan nét tương đồng giữa từ Hán - Việt và tiếng Trung hiện đại, giúp bạn suy luận từ mới nhanh hơn, hiểu sâu nguồn gốc chữ Hán mà không phải học vẹt.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="why-card reveal-on-scroll">
+            <div class="why-card-number">02</div>
+            <div class="why-card-content">
+              <h3 class="why-card-title">Luyện tập thay vì chỉ học lý thuyết</h3>
+              <p class="why-card-desc">
+                Mỗi buổi học trực tuyến đều dành phần lớn thời gian để học viên trực tiếp mở mic nói, tương tác với giáo viên và các bạn cùng lớp. Lỗi phát âm được sửa ngay tại chỗ.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="why-card reveal-on-scroll">
+            <div class="why-card-number">03</div>
+            <div class="why-card-content">
+              <h3 class="why-card-title">Có mục tiêu học tập rõ ràng</h3>
+              <p class="why-card-desc">
+                Không học chung chung. Trước khi bắt đầu, bạn sẽ được xác định đích đến cụ thể: giao tiếp trôi chảy các chủ đề đời sống, vượt qua kỳ thi HSK hay chuẩn bị hồ sơ đi làm.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="why-card reveal-on-scroll">
+            <div class="why-card-number">04</div>
+            <div class="why-card-content">
+              <h3 class="why-card-title">Lựa chọn lộ trình theo nhu cầu cá nhân</h3>
+              <p class="why-card-desc">
+                Cung cấp cả lớp học trực tuyến nhóm nhỏ (4 - 6 bạn để tối ưu tương tác) và lớp kèm 1:1 linh hoạt thời gian theo lịch làm việc của người bận rộn.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- =========================================================================
+         SECTION 7: INSTRUCTORS
+         Sample instructor profiles clearly labeled for real data replacement
+         ========================================================================= -->
+    <section class="instructors-section section-padding bg-cream" id="instructors">
+      <div class="container">
+        <div class="section-header text-center reveal-on-scroll">
+          <span class="section-tag">ĐỘI NGŨ GIẢNG VIÊN</span>
+          <h2 class="section-title">Người đồng hành trên hành trình học tập.</h2>
+          <p class="section-subtitle">
+            Đội ngũ giáo viên vững chuyên môn ngôn ngữ, phát âm chuẩn và luôn đồng hành thấu hiểu những bỡ ngỡ của người mới bắt đầu.
+          </p>
+        </div>
+
+        <div class="instructors-grid">
+          
+          <!-- Instructor 1 -->
+          <div class="instructor-card reveal-on-scroll">
+            <div class="instructor-avatar-wrap">
+              <img src="assets/images/instructor-1.svg" alt="Giảng viên Mai Phương" width="200" height="200" loading="lazy">
+              <span class="instructor-tag">Ngữ âm &amp; Nhập môn</span>
+            </div>
+            <div class="instructor-info">
+              <h3 class="instructor-name">Cô Mai Phương</h3>
+              <span class="instructor-role">Thạc sĩ Ngôn ngữ Trung Quốc</span>
+              <p class="instructor-method">
+                <strong>Phương pháp giảng dạy:</strong> Trực quan hóa hệ thống thanh điệu Pinyin bằng hình tượng và khẩu hình, giúp học viên không bị cứng lưỡi và nói tự nhiên.
+              </p>
+              <p class="instructor-bio">
+                Hơn 5 năm giảng dạy tiếng Trung sơ cấp cho người đi làm và sinh viên. Tận tình sửa từng âm tiết cho học viên mới.
+              </p>
+            </div>
+          </div>
+
+          <!-- Instructor 2 -->
+          <div class="instructor-card reveal-on-scroll">
+            <div class="instructor-avatar-wrap">
+              <img src="assets/images/instructor-2.svg" alt="Giảng viên Hoàng Minh" width="200" height="200" loading="lazy">
+              <span class="instructor-tag">Chuyên gia HSK</span>
+            </div>
+            <div class="instructor-info">
+              <h3 class="instructor-name">Thầy Hoàng Minh</h3>
+              <span class="instructor-role">Chuyên gia luyện thi HSK</span>
+              <p class="instructor-method">
+                <strong>Phương pháp giảng dạy:</strong> Tư duy phân tích cấu trúc đề thi, phương pháp mở rộng từ vựng theo trường nghĩa và kỹ năng nghe bắt từ khóa trọng tâm.
+              </p>
+              <p class="instructor-bio">
+                7 năm kinh nghiệm giảng dạy tiếng Trung học thuật và luyện thi HSK 3 - HSK 5, phong cách giảng dạy gãy gọn, tập trung vào chiến thuật làm bài.
+              </p>
+            </div>
+          </div>
+
+          <!-- Instructor 3 -->
+          <div class="instructor-card reveal-on-scroll">
+            <div class="instructor-avatar-wrap">
+              <img src="assets/images/instructor-3.svg" alt="Giảng viên Thanh Hằng" width="200" height="200" loading="lazy">
+              <span class="instructor-tag">Giao tiếp &amp; Phồn thể</span>
+            </div>
+            <div class="instructor-info">
+              <h3 class="instructor-name">Cô Thanh Hằng</h3>
+              <span class="instructor-role">Giảng viên Giao tiếp ứng dụng</span>
+              <p class="instructor-method">
+                <strong>Phương pháp giảng dạy:</strong> Đưa 100% tình huống thực tế đời sống công sở và nhà xưởng vào bài giảng, kết hợp đối chiếu chữ Giản thể &amp; Phồn thể.
+              </p>
+              <p class="instructor-bio">
+                Từng làm việc nhiều năm trong môi trường doanh nghiệp Đài Loan, am hiểu văn hóa và cách ứng xử thực tế trong môi trường làm việc nước ngoài.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+        <p class="instructors-note text-center">
+          * Ghi chú hệ thống: Toàn bộ thông tin giảng viên trên đây là hồ sơ minh họa mẫu cho giao diện demo và sẽ được thay thế bằng hồ sơ chính thức của giảng viên HANYU ACADEMY khi website đi vào hoạt động chính thức.
+        </p>
+      </div>
+    </section>
+
+
+    <!-- =========================================================================
+         SECTION 8: STUDENT REVIEWS
+         Authentic, realistic student testimonials (annotated sample data)
+         ========================================================================= -->
+    <section class="reviews-section section-padding" id="reviews">
+      <div class="container">
+        <div class="section-header text-center reveal-on-scroll">
+          <span class="section-tag">CHIA SẺ HỌC VIÊN</span>
+          <h2 class="section-title">Mỗi hành trình học tập đều bắt đầu từ một bước nhỏ.</h2>
+          <p class="section-subtitle">
+            Cảm nhận chân thực từ những người học đã từng bắt đầu từ con số 0 như bạn.
+          </p>
+        </div>
+
+        <div class="reviews-grid">
+          
+          <!-- Review 1 -->
+          <div class="review-card reveal-on-scroll">
+            <div class="review-quote-mark">“</div>
+            <p class="review-text">
+              Trước đây mình đã tự học tiếng Trung trên mạng nhưng hay bị nhầm thanh điệu 1 với thanh điệu 4. Tham gia khóa Nhập môn ở Hanyu, cô giáo sửa khẩu hình rất tỉ mỉ trong từng buổi. Giờ mình đã đọc đúng Pinyin và không còn sợ nói sai nữa.
+            </p>
+            <div class="reviewer-meta">
+              <img src="assets/images/student-1.svg" alt="Nguyễn Thu Trang" width="48" height="48" class="reviewer-avatar">
+              <div class="reviewer-info">
+                <span class="reviewer-name">Nguyễn Thu Trang</span>
+                <span class="reviewer-role">Sinh viên năm 3 • Khóa Nhập môn</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Review 2 -->
+          <div class="review-card reveal-on-scroll">
+            <div class="review-quote-mark">“</div>
+            <p class="review-text">
+              Công việc của mình thường xuyên tiếp xúc với khách hàng Trung Quốc. Khóa Giao tiếp thực tế rất hữu ích vì không nặng lý thuyết ngữ pháp mà tập trung vào các câu thoại thường dùng trong công việc và trao đổi dự án.
+            </p>
+            <div class="reviewer-meta">
+              <img src="assets/images/student-2.svg" alt="Trần Quốc Đạt" width="48" height="48" class="reviewer-avatar">
+              <div class="reviewer-info">
+                <span class="reviewer-name">Trần Quốc Đạt</span>
+                <span class="reviewer-role">Kỹ sư phần mềm • Khóa Giao tiếp thực tế</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Review 3 -->
+          <div class="review-card reveal-on-scroll">
+            <div class="review-quote-mark">“</div>
+            <p class="review-text">
+              Mình chuẩn bị sang Đài Loan làm việc nên rất cần học chữ Phồn thể và từ ngữ thực tế. Giáo trình ở đây bám sát đời sống tại Đài Loan, từ cách chào hỏi, số đếm đến các từ vựng nơi làm việc đều rất thực tế.
+            </p>
+            <div class="reviewer-meta">
+              <img src="assets/images/student-3.svg" alt="Lê Thị Mai" width="48" height="48" class="reviewer-avatar">
+              <div class="reviewer-info">
+                <span class="reviewer-name">Lê Thị Mai</span>
+                <span class="reviewer-role">Nhân viên xuất nhập khẩu • Khóa Định hướng Đài Loan</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <p class="reviews-disclaimer text-center">
+          * Các chia sẻ trên là nội dung minh họa trải nghiệm học tập mẫu cho bản demo. Chúng tôi tôn trọng tính chân thực và không sử dụng đánh giá giả để quảng bá thương mại.
+        </p>
+      </div>
+    </section>
+
+
+    <!-- =========================================================================
+         SECTION 9: PRICING & CONVERSION
+         Transparent pricing packages configured cleanly from JS data object
+         ========================================================================= -->
+    <section class="pricing-section section-padding bg-cream" id="pricing">
+      <div class="container">
+        <div class="section-header text-center reveal-on-scroll">
+          <span class="section-tag">HỌC PHÍ MINH BẠCH</span>
+          <h2 class="section-title">Đầu tư cho một kỹ năng có thể mở rộng tương lai.</h2>
+          <p class="section-subtitle">
+            Học phí được tối ưu cho hình thức học trực tuyến chất lượng cao với sĩ số lớp nhỏ và hỗ trợ xuyên suốt khóa học.
+          </p>
+        </div>
+
+        <!-- Dynamic Pricing Container rendered via JavaScript / HTML fallback -->
+        <div class="pricing-grid" id="pricingGrid">
+          <!-- Populated cleanly via JS HANYU_PRICING_DATA with accessible markup -->
+        </div>
+
+        <div class="pricing-bottom-box reveal-on-scroll">
+          <div class="pricing-custom-text">
+            <h4>Bạn cần chương trình đào tạo doanh nghiệp hoặc học kèm 1:1 cá nhân?</h4>
+            <p>Chúng tôi cung cấp lộ trình thiết kế riêng bám sát thời gian và mục tiêu cụ thể của bạn.</p>
+          </div>
+          <button type="button" class="btn btn-primary open-modal-btn" data-course="Tư vấn kèm 1:1 hoặc Doanh nghiệp">
+            Nhận tư vấn khóa học miễn phí
+          </button>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- =========================================================================
+         SECTION 10: REGISTRATION FORM
+         High-converting conversion engine, comprehensive JS validation & demo feedback
+         ========================================================================= -->
+    <section class="registration-section section-padding" id="registration">
+      <div class="container">
+        <div class="registration-wrapper reveal-on-scroll">
+          <div class="registration-intro">
+            <span class="section-tag">ĐĂNG KÝ TƯ VẤN</span>
+            <h2 class="registration-title">Bắt đầu hành trình học tiếng Trung của bạn.</h2>
+            <p class="registration-desc">
+              Để lại thông tin, đội ngũ tư vấn sẽ hỗ trợ bạn lựa chọn khóa học phù hợp với trình độ, quỹ thời gian và mục tiêu cụ thể.
+            </p>
+
+            <div class="registration-guarantees">
+              <div class="guarantee-item">
+                <span class="guarantee-icon">✦</span>
+                <div>
+                  <strong>Tư vấn đúng lộ trình:</strong> Đánh giá trình độ và đề xuất giải pháp tiết kiệm thời gian nhất.
+                </div>
+              </div>
+              <div class="guarantee-item">
+                <span class="guarantee-icon">✦</span>
+                <div>
+                  <strong>Học thử trải nghiệm:</strong> Cơ hội tham gia buổi làm quen phương pháp trước khi quyết định.
+                </div>
+              </div>
+              <div class="guarantee-item">
+                <span class="guarantee-icon">✦</span>
+                <div>
+                  <strong>Bảo mật thông tin:</strong> Chúng tôi cam kết tuyệt đối không chia sẻ dữ liệu liên hệ cho bên thứ ba.
+                </div>
+              </div>
+            </div>
+
+            <!-- Demo Mode Notice in Section -->
+            <div class="demo-badge-notice">
+              <span class="demo-pill">Chế độ Demo</span>
+              <p>Form đã tích hợp lớp kiểm tra hợp lệ dữ liệu. Khi nhấn gửi, hệ thống sẽ mô phỏng phản hồi mà chưa gửi tới máy chủ thật.</p>
+            </div>
+          </div>
+
+          <!-- The Registration Form Form -->
+          <div class="registration-form-card">
+            <form id="leadForm" class="lead-form" novalidate>
+              
+              <!-- Full Name Field -->
+              <div class="form-group" id="group-fullname">
+                <label for="fullname" class="form-label">Họ và tên <span class="required-star">*</span></label>
+                <div class="input-wrapper">
+                  <input type="text" id="fullname" name="fullname" class="form-control" placeholder="Ví dụ: Nguyễn Văn A" autocomplete="name" required>
+                </div>
+                <div class="field-error" id="error-fullname" role="alert" aria-live="polite"></div>
+              </div>
+
+              <!-- Phone Field -->
+              <div class="form-group" id="group-phone">
+                <label for="phone" class="form-label">Số điện thoại <span class="required-star">*</span></label>
+                <div class="input-wrapper">
+                  <input type="tel" id="phone" name="phone" class="form-control" placeholder="Ví dụ: 0912 345 678" autocomplete="tel" required>
+                </div>
+                <div class="field-error" id="error-phone" role="alert" aria-live="polite"></div>
+              </div>
+
+              <!-- Email Field (Optional) -->
+              <div class="form-group" id="group-email">
+                <label for="email" class="form-label">Email <span class="optional-tag">(Không bắt buộc)</span></label>
+                <div class="input-wrapper">
+                  <input type="email" id="email" name="email" class="form-control" placeholder="Ví dụ: ban@gmail.com" autocomplete="email">
+                </div>
+                <div class="field-error" id="error-email" role="alert" aria-live="polite"></div>
+              </div>
+
+              <!-- Course Select Field -->
+              <div class="form-group" id="group-course">
+                <label for="courseSelect" class="form-label">Khóa học bạn quan tâm <span class="required-star">*</span></label>
+                <div class="select-wrapper">
+                  <select id="courseSelect" name="course" class="form-control" required>
+                    <option value="">-- Vui lòng chọn khóa học --</option>
+                    <option value="Tiếng Trung cho người mới bắt đầu">Tiếng Trung cho người mới bắt đầu</option>
+                    <option value="Tiếng Trung giao tiếp thực tế">Tiếng Trung giao tiếp thực tế</option>
+                    <option value="Luyện thi HSK">Luyện thi HSK</option>
+                    <option value="Tiếng Trung ứng dụng tại Đài Loan">Tiếng Trung ứng dụng tại Đài Loan</option>
+                    <option value="Chưa quyết định / Cần tư vấn thêm">Chưa quyết định / Cần tư vấn thêm</option>
+                  </select>
+                </div>
+                <div class="field-error" id="error-course" role="alert" aria-live="polite"></div>
+              </div>
+
+              <!-- Current Level Radio Group -->
+              <div class="form-group" id="group-level">
+                <label class="form-label">Trình độ hiện tại của bạn <span class="required-star">*</span></label>
+                <div class="radio-options-grid">
+                  <label class="radio-card">
+                    <input type="radio" name="level" value="Chưa từng học" checked>
+                    <span class="radio-custom"></span>
+                    <span class="radio-text">Chưa từng học</span>
+                  </label>
+                  <label class="radio-card">
+                    <input type="radio" name="level" value="Đã biết cơ bản / Tự học">
+                    <span class="radio-custom"></span>
+                    <span class="radio-text">Đã biết cơ bản</span>
+                  </label>
+                  <label class="radio-card">
+                    <input type="radio" name="level" value="Đã có nền tảng vững">
+                    <span class="radio-custom"></span>
+                    <span class="radio-text">Đã có nền tảng</span>
+                  </label>
+                </div>
+              </div>
+
+              <!-- Goal Select Field -->
+              <div class="form-group" id="group-goal">
+                <label for="goalSelect" class="form-label">Mục tiêu học tập chính <span class="required-star">*</span></label>
+                <div class="select-wrapper">
+                  <select id="goalSelect" name="goal" class="form-control" required>
+                    <option value="">-- Chọn mục tiêu của bạn --</option>
+                    <option value="Giao tiếp trong đời sống hằng ngày">Giao tiếp trong đời sống hằng ngày</option>
+                    <option value="Phục vụ công việc, nâng cao thu nhập">Phục vụ công việc, nâng cao thu nhập</option>
+                    <option value="Làm việc, sinh sống tại Đài Loan">Làm việc, sinh sống tại Đài Loan</option>
+                    <option value="Thi lấy chứng chỉ HSK để xin việc / du học">Thi lấy chứng chỉ HSK để xin việc / du học</option>
+                    <option value="Sở thích văn hóa và mục tiêu khác">Sở thích văn hóa và mục tiêu khác</option>
+                  </select>
+                </div>
+                <div class="field-error" id="error-goal" role="alert" aria-live="polite"></div>
+              </div>
+
+              <!-- Privacy Policy Agreement Checkbox -->
+              <div class="form-group" id="group-consent">
+                <label class="checkbox-label">
+                  <input type="checkbox" id="consent" name="consent" required>
+                  <span class="checkbox-custom"></span>
+                  <span class="checkbox-text">
+                    Tôi đồng ý để HANYU ACADEMY liên hệ tư vấn thông qua số điện thoại trên và đồng ý với <a href="#privacyPolicy" class="inline-link" target="_blank" rel="noopener">Chính sách bảo mật</a>.
+                  </span>
+                </label>
+                <div class="field-error" id="error-consent" role="alert" aria-live="polite"></div>
+              </div>
+
+              <!-- Submit Button -->
+              <div class="form-action">
+                <button type="submit" class="btn btn-primary btn-block btn-lg" id="submitBtn">
+                  <span class="btn-text">Gửi thông tin đăng ký tư vấn</span>
+                  <span class="btn-loader" aria-hidden="true"></span>
+                </button>
+              </div>
+
+              <p class="form-security-note text-center">
+                <svg viewBox="0 0 16 16" width="12" height="12" fill="currentColor">
+                  <path d="M8 0a4 4 0 0 0-4 4v2H3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-1V4a4 4 0 0 0-4-4zm-2 4a2 2 0 1 1 4 0v2H6V4z"/>
+                </svg>
+                Thông tin được mã hóa bảo mật. Không làm phiền sau tư vấn.
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- =========================================================================
+         SECTION 11: FAQ
+         Fully accessible JavaScript accordion with keyboard navigation
+         ========================================================================= -->
+    <section class="faq-section section-padding bg-cream" id="faq">
+      <div class="container">
+        <div class="section-header text-center reveal-on-scroll">
+          <span class="section-tag">GIẢI ĐÁP THẮC MẮC</span>
+          <h2 class="section-title">Câu hỏi thường gặp.</h2>
+          <p class="section-subtitle">
+            Những thắc mắc phổ biến nhất của người mới khi bắt đầu học tiếng Trung trực tuyến.
+          </p>
+        </div>
+
+        <div class="faq-accordion" id="faqAccordion">
+          
+          <!-- FAQ Item 1 -->
+          <div class="faq-item reveal-on-scroll">
+            <button type="button" class="faq-question" id="faqHeader-1" aria-expanded="false" aria-controls="faqContent-1">
+              <span class="faq-question-text">Tôi chưa biết gì về tiếng Trung, có thể bắt đầu được không?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer" id="faqContent-1" role="region" aria-labelledby="faqHeader-1">
+              <div class="faq-answer-inner">
+                <p>
+                  Hoàn toàn có thể. Khóa học "Tiếng Trung cho người mới bắt đầu" tại HANYU ACADEMY được thiết kế chuyên biệt cho những người chưa từng tiếp xúc với chữ Hán hay hệ thống Pinyin. Giảng viên sẽ hướng dẫn chi tiết từng khẩu hình miệng, thanh điệu và phương pháp nhớ mặt chữ logic, giúp bạn tự tin ngay từ những buổi đầu tiên.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ Item 2 -->
+          <div class="faq-item reveal-on-scroll">
+            <button type="button" class="faq-question" id="faqHeader-2" aria-expanded="false" aria-controls="faqContent-2">
+              <span class="faq-question-text">Nên chọn khóa giao tiếp hay khóa luyện thi HSK?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer" id="faqContent-2" role="region" aria-labelledby="faqHeader-2">
+              <div class="faq-answer-inner">
+                <p>
+                  Điều này tùy thuộc vào mục tiêu ngắn hạn của bạn:
+                </p>
+                <ul>
+                  <li><strong>Chọn khóa Giao tiếp:</strong> Nếu mục đích chính là nói chuyện, phản xạ hằng ngày, phục vụ kinh doanh buôn bán hoặc công việc cần trao đổi trực tiếp bằng lời nói.</li>
+                  <li><strong>Chọn khóa HSK:</strong> Nếu bạn cần chứng chỉ quốc tế để làm hồ sơ xin việc, du học, tốt nghiệp đại học hoặc định cư.</li>
+                </ul>
+                <p>Nếu bạn phân vân, đội ngũ tư vấn sẽ hỗ trợ bạn kiểm tra năng lực và định hướng phù hợp nhất.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ Item 3 -->
+          <div class="faq-item reveal-on-scroll">
+            <button type="button" class="faq-question" id="faqHeader-3" aria-expanded="false" aria-controls="faqContent-3">
+              <span class="faq-question-text">Tôi muốn học tiếng Trung phồn thể thì nên chọn khóa nào?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer" id="faqContent-3" role="region" aria-labelledby="faqHeader-3">
+              <div class="faq-answer-inner">
+                <p>
+                  Bạn nên chọn khóa <strong>"Tiếng Trung ứng dụng tại Đài Loan"</strong>. Chương trình này tích hợp việc làm quen với chữ Hán Phồn thể (繁體字), các từ vựng bản địa và phong cách giao tiếp đặc trưng tại Đài Loan. Học viên cũng được hướng dẫn cách chuyển đổi linh hoạt giữa Giản thể và Phồn thể.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ Item 4 -->
+          <div class="faq-item reveal-on-scroll">
+            <button type="button" class="faq-question" id="faqHeader-4" aria-expanded="false" aria-controls="faqContent-4">
+              <span class="faq-question-text">Học phí và thời lượng khóa học là bao nhiêu?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer" id="faqContent-4" role="region" aria-labelledby="faqHeader-4">
+              <div class="faq-answer-inner">
+                <p>
+                  Thời lượng các khóa dao động từ 24 đến 36 buổi (khoảng 3 đến 4 tháng). Mức học phí tham khảo dao động từ 2.450.000đ đến 3.650.000đ tùy theo hình thức học lớp nhỏ hoặc học 1:1. Học phí đã bao gồm trọn bộ giáo trình, file nghe và hỗ trợ giải đáp ngoài giờ.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ Item 5 -->
+          <div class="faq-item reveal-on-scroll">
+            <button type="button" class="faq-question" id="faqHeader-5" aria-expanded="false" aria-controls="faqContent-5">
+              <span class="faq-question-text">Tôi có thể đăng ký tư vấn trước khi thanh toán không?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer" id="faqContent-5" role="region" aria-labelledby="faqHeader-5">
+              <div class="faq-answer-inner">
+                <p>
+                  Chắc chắn có. HANYU ACADEMY luôn khuyến khích học viên đăng ký nhận tư vấn và làm bài kiểm tra trình độ hoàn toàn miễn phí. Bạn chỉ thanh toán khi đã hoàn toàn yên tâm về giáo viên, lộ trình và lịch học phù hợp với thời gian biểu của mình.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ Item 6 -->
+          <div class="faq-item reveal-on-scroll">
+            <button type="button" class="faq-question" id="faqHeader-6" aria-expanded="false" aria-controls="faqContent-6">
+              <span class="faq-question-text">Làm thế nào để đăng ký khóa học?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer" id="faqContent-6" role="region" aria-labelledby="faqHeader-6">
+              <div class="faq-answer-inner">
+                <p>
+                  Quy trình đăng ký gồm 3 bước đơn giản:
+                </p>
+                <ol>
+                  <li>Để lại thông tin tại biểu mẫu đăng ký tư vấn trên website.</li>
+                  <li>Chuyên viên tư vấn liên hệ xác nhận mục tiêu, xếp lịch học và gửi tài liệu làm quen.</li>
+                  <li>Hoàn tất thủ tục lớp học và tham gia buổi học trực tuyến đầu tiên.</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- =========================================================================
+         SECTION 12: FINAL CTA & FOOTER
+         Conversion boost banner, complete brand footer with policy & contact
+         ========================================================================= -->
+    <section class="final-cta-section">
+      <div class="container">
+        <div class="final-cta-card reveal-on-scroll">
+          <div class="final-cta-content text-center">
+            <span class="final-cta-tag">BẮT ĐẦU HÀNH TRÌNH MỚI</span>
+            <h2 class="final-cta-title">Bắt đầu hôm nay. Tiến gần hơn đến mục tiêu của bạn.</h2>
+            <p class="final-cta-desc">
+              Một quyết định học thêm một ngoại ngữ hôm nay có thể thay đổi cơ hội công việc và cuộc sống của bạn trong tương lai. Hãy để HANYU ACADEMY đồng hành cùng bạn.
+            </p>
+            <div class="final-cta-btn-wrap">
+              <button type="button" class="btn btn-primary btn-lg open-modal-btn" data-course="Đăng ký từ Final CTA">
+                <span>Nhận tư vấn miễn phí ngay</span>
+                <svg viewBox="0 0 16 16" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M3 8h10M9 4l4 4-4 4" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+            </div>
+            <p class="final-cta-guarantee">Không mất phí tư vấn • Nhận tài liệu lộ trình tự học miễn phí</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      
+      <!-- Footer Col 1: Brand -->
+      <div class="footer-col brand-col">
+        <a href="#hero" class="brand-logo footer-logo">
+          <div class="logo-seal">
+            <img src="assets/icons/seal.svg" alt="HANYU Seal" width="34" height="34">
+          </div>
+          <div class="logo-text-group">
+            <span class="brand-name">HANYU <span class="brand-name-sub">ACADEMY</span></span>
+            <span class="brand-slogan">Mở lối ngôn ngữ. Kết nối tương lai.</span>
+          </div>
+        </a>
+        <p class="footer-about">
+          Học viện đào tạo tiếng Trung trực tuyến cao cấp dành cho người Việt Nam. Chương trình học tinh gọn, chú trọng phản xạ ứng dụng và kết quả thực tế.
+        </p>
+        <div class="footer-social-links">
+          <a href="#" class="social-link" aria-label="Facebook HANYU ACADEMY">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+          <a href="#" class="social-link" aria-label="YouTube HANYU ACADEMY">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33zM9.75 15.02V8.5l5.7 3.26-5.7 3.26z"/></svg>
+          </a>
+          <a href="#" class="social-link" aria-label="TikTok HANYU ACADEMY">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 3 15.68 6.34 6.34 0 0 0 9.34 22a6.34 6.34 0 0 0 6.33-6.33V9.12a8.28 8.28 0 0 0 4.92 1.6V7.27a4.85 4.85 0 0 1-1-.58z"/></svg>
+          </a>
+          <a href="#" class="social-link" aria-label="Zalo HANYU ACADEMY">
+            <span class="zalo-text">Zalo</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Footer Col 2: Navigation Links -->
+      <div class="footer-col">
+        <h4 class="footer-col-title">Khám phá</h4>
+        <ul class="footer-links">
+          <li><a href="#hero">Trang chủ</a></li>
+          <li><a href="#benefits">Lợi ích học tập</a></li>
+          <li><a href="#courses">Danh sách khóa học</a></li>
+          <li><a href="#roadmap">Lộ trình 4 giai đoạn</a></li>
+          <li><a href="#why-us">Tại sao chọn Hanyu</a></li>
+          <li><a href="#instructors">Đội ngũ giảng viên</a></li>
+          <li><a href="#pricing">Bảng học phí tham khảo</a></li>
+          <li><a href="#faq">Câu hỏi thường gặp</a></li>
+        </ul>
+      </div>
+
+      <!-- Footer Col 3: Programs -->
+      <div class="footer-col">
+        <h4 class="footer-col-title">Chương trình</h4>
+        <ul class="footer-links">
+          <li><a href="#courses" class="open-modal-from-link" data-course="Tiếng Trung cho người mới bắt đầu">Tiếng Trung Nhập môn</a></li>
+          <li><a href="#courses" class="open-modal-from-link" data-course="Tiếng Trung giao tiếp thực tế">Tiếng Trung Giao tiếp</a></li>
+          <li><a href="#courses" class="open-modal-from-link" data-course="Luyện thi HSK">Luyện thi HSK Cấp tốc</a></li>
+          <li><a href="#courses" class="open-modal-from-link" data-course="Tiếng Trung ứng dụng tại Đài Loan">Tiếng Trung Đài Loan</a></li>
+          <li><a href="#registration" class="open-modal-from-link" data-course="Tư vấn 1:1">Lớp kèm 1:1 cá nhân</a></li>
+        </ul>
+      </div>
+
+      <!-- Footer Col 4: Contact & Legal -->
+      <div class="footer-col">
+        <h4 class="footer-col-title">Liên hệ &amp; Thông tin</h4>
+        <ul class="footer-contact-list">
+          <li class="contact-item">
+            <span class="contact-icon">📍</span>
+            <span>Tòa nhà EdTech Hub, Quận 1, TP. Hồ Chí Minh (Văn phòng mẫu)</span>
+          </li>
+          <li class="contact-item">
+            <span class="contact-icon">📞</span>
+            <span>Hotline tư vấn: 1900 xxxx (Thông tin mẫu cấu hình)</span>
+          </li>
+          <li class="contact-item">
+            <span class="contact-icon">✉️</span>
+            <span>Email hỗ trợ: contact@hanyuacademy.vn (Mẫu)</span>
+          </li>
+          <li class="contact-item">
+            <span class="contact-icon">🕒</span>
+            <span>Giờ làm việc: 08:30 – 21:00 (Thứ 2 – Thứ 7)</span>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Footer Bottom Legal Bar -->
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p class="copyright">
+          © 2026 HANYU ACADEMY. Mọi quyền được bảo lưu. Thiết kế và phát triển phục vụ mục đích đào tạo tiếng Trung cao cấp.
+        </p>
+        <div class="legal-links">
+          <a href="#privacyPolicy" class="legal-link" id="policyTrigger">Chính sách bảo mật</a>
+          <span class="divider">|</span>
+          <a href="#termsOfService" class="legal-link" id="termsTrigger">Điều khoản sử dụng</a>
+          <span class="divider">|</span>
+          <a href="#demoDisclaimer" class="legal-link" id="disclaimerTrigger">Quy chế demo</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- =========================================================================
+       MODAL 1: REGISTRATION & CONSULTATION MODAL
+       High-conversion modal triggered by CTAs across the entire page
+       ========================================================================= -->
+  <div class="modal-backdrop" id="consultationModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div>
+            <span class="modal-tag">TƯ VẤN MIỄN PHÍ</span>
+            <h3 class="modal-title" id="modalTitle">Đăng ký tư vấn khóa học</h3>
+          </div>
+          <button type="button" class="modal-close" id="modalCloseBtn" aria-label="Đóng cửa sổ">
+            &times;
+          </button>
+        </div>
+
+        <div class="modal-body">
+          <p class="modal-subtitle">
+            Để lại thông tin, chuyên viên đào tạo HANYU ACADEMY sẽ liên hệ tư vấn lộ trình và xếp lịch học thử cho bạn.
+          </p>
+
+          <form id="modalLeadForm" class="lead-form modal-form" novalidate>
+            <div class="form-group" id="mgroup-fullname">
+              <label for="m-fullname" class="form-label">Họ và tên <span class="required-star">*</span></label>
+              <input type="text" id="m-fullname" name="fullname" class="form-control" placeholder="Ví dụ: Nguyễn Văn A" required>
+              <div class="field-error" id="merror-fullname" role="alert"></div>
+            </div>
+
+            <div class="form-group" id="mgroup-phone">
+              <label for="m-phone" class="form-label">Số điện thoại <span class="required-star">*</span></label>
+              <input type="tel" id="m-phone" name="phone" class="form-control" placeholder="Ví dụ: 0912 345 678" required>
+              <div class="field-error" id="merror-phone" role="alert"></div>
+            </div>
+
+            <div class="form-group" id="mgroup-email">
+              <label for="m-email" class="form-label">Email <span class="optional-tag">(Tùy chọn)</span></label>
+              <input type="email" id="m-email" name="email" class="form-control" placeholder="ban@gmail.com">
+              <div class="field-error" id="merror-email" role="alert"></div>
+            </div>
+
+            <div class="form-group" id="mgroup-course">
+              <label for="m-courseSelect" class="form-label">Khóa học bạn chọn <span class="required-star">*</span></label>
+              <select id="m-courseSelect" name="course" class="form-control" required>
+                <option value="">-- Chọn khóa học --</option>
+                <option value="Tiếng Trung cho người mới bắt đầu">Tiếng Trung cho người mới bắt đầu</option>
+                <option value="Tiếng Trung giao tiếp thực tế">Tiếng Trung giao tiếp thực tế</option>
+                <option value="Luyện thi HSK">Luyện thi HSK</option>
+                <option value="Tiếng Trung ứng dụng tại Đài Loan">Tiếng Trung ứng dụng tại Đài Loan</option>
+                <option value="Chưa quyết định / Cần tư vấn thêm">Chưa quyết định / Cần tư vấn thêm</option>
+              </select>
+              <div class="field-error" id="merror-course" role="alert"></div>
+            </div>
+
+            <div class="form-group" id="mgroup-level">
+              <label class="form-label">Trình độ hiện tại</label>
+              <div class="radio-options-grid">
+                <label class="radio-card small">
+                  <input type="radio" name="mlevel" value="Chưa từng học" checked>
+                  <span class="radio-custom"></span>
+                  <span class="radio-text">Chưa học</span>
+                </label>
+                <label class="radio-card small">
+                  <input type="radio" name="mlevel" value="Cơ bản">
+                  <span class="radio-custom"></span>
+                  <span class="radio-text">Cơ bản</span>
+                </label>
+                <label class="radio-card small">
+                  <input type="radio" name="mlevel" value="Có nền tảng">
+                  <span class="radio-custom"></span>
+                  <span class="radio-text">Có nền tảng</span>
+                </label>
+              </div>
+            </div>
+
+            <div class="form-group" id="mgroup-consent">
+              <label class="checkbox-label">
+                <input type="checkbox" id="m-consent" name="consent" checked required>
+                <span class="checkbox-custom"></span>
+                <span class="checkbox-text">Đồng ý nhận tư vấn miễn phí từ HANYU ACADEMY.</span>
+              </label>
+              <div class="field-error" id="merror-consent" role="alert"></div>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block btn-lg" id="modalSubmitBtn">
+              <span class="btn-text">Xác nhận nhận tư vấn</span>
+              <span class="btn-loader" aria-hidden="true"></span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- =========================================================================
+       MODAL 2: COURSE DETAIL SYLLABUS MODAL
+       Displays course curriculum breakdown when clicking "Xem khóa học"
+       ========================================================================= -->
+  <div class="modal-backdrop" id="courseDetailModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="cdTitle">
+    <div class="modal-dialog modal-dialog-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div>
+            <span class="modal-tag" id="cdTag">CHI TIẾT CHƯƠNG TRÌNH</span>
+            <h3 class="modal-title" id="cdTitle">Tên khóa học</h3>
+          </div>
+          <button type="button" class="modal-close" id="courseModalCloseBtn" aria-label="Đóng cửa sổ">
+            &times;
+          </button>
+        </div>
+
+        <div class="modal-body" id="cdBody">
+          <!-- Populated dynamically via JS -->
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline" id="courseModalCancelBtn">Đóng lại</button>
+          <button type="button" class="btn btn-primary" id="courseModalEnrollBtn">Đăng ký tư vấn khóa này</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- =========================================================================
+       MODAL 3: SUBMISSION STATUS / DEMO FEEDBACK MODAL
+       Transparent notice informing user about validated demo submission
+       ========================================================================= -->
+  <div class="modal-backdrop" id="feedbackModal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-dialog modal-dialog-sm">
+      <div class="modal-content text-center">
+        <div class="feedback-icon-box" id="feedbackIconBox">
+          ✓
+        </div>
+        <h3 class="feedback-title" id="feedbackTitle">Đăng ký thành công!</h3>
+        <p class="feedback-desc" id="feedbackDesc">
+          Nội dung phản hồi...
+        </p>
+        <div class="feedback-meta-box" id="feedbackMetaBox">
+          <!-- Submission summary payload display -->
+        </div>
+        <button type="button" class="btn btn-primary btn-block" id="feedbackCloseBtn">
+          Đã hiểu và tiếp tục
+        </button>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- =========================================================================
+       FLOATING CONVERSION PILL WIDGET (Bottom Right)
+       Quick floating CTA for users scrolling deep into content
+       ========================================================================= -->
+  <div class="floating-cta-widget" id="floatingWidget">
+    <button type="button" class="floating-cta-btn open-modal-btn" data-course="Tư vấn nhanh từ nút nổi" aria-label="Đăng ký tư vấn ngay">
+      <span class="floating-seal">
+        <img src="assets/icons/seal.svg" alt="Hanyu" width="22" height="22">
+      </span>
+      <span class="floating-label">Tư vấn miễn phí</span>
+    </button>
+  </div>
+
+  <!-- JavaScript Main Application Script -->
+  <script src="js/main.js"></script>
+</body>
+</html>
